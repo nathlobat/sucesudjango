@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'sucesu-site',
+    'sucesu_site',
 ]
 
 MIDDLEWARE = [
