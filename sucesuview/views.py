@@ -1,4 +1,4 @@
 from django.shortcuts import render
 
-def post_list(request):
-    return render(request, 'sucesu_templates/index.html', {})
+def index(request):
+    return render(request, 'sucesu/index.html', {})
