@@ -1,4 +1,4 @@
-{% extends 'sucesu/base.html' %}
+{% extends 'sucesuview/base.html' %}
 {% load staticfiles%}
 {% block content %}
             <!-- end header -->
@@ -91,7 +91,7 @@
                           <p class="-webkit-cente">Cadastre-se em nosso site e receba, por e-mail, novidades sobre a SUCESU-PA e informações sobre eventos, treinamentos e serviços.</p>
                       </div>
             <div class="col-md-4">
-              <a href="associe-se.html"><img class="circular img-responsive" src="{& static 'img/service2.jpg' %}" alt=""></a>
+              <a href="associe-se.html"><img class="circular img-responsive" src="{% static 'img/service2.jpg' %}" alt=""></a>
                 <h3> <a href="associe-se.html">Associe-se </a></h3>
                 <p class="text-justify">Faça sua empresa desfrutar imediatamente de todas as vantagens de se associar à SUCESU-PA. Como Pessoa Jurídica, o associado poderá ter qualquer profissional de qualquer área da empresa participando das atividades, como um sócio aderente.</p>
             </div>
