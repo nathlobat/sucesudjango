@@ -29,3 +29,9 @@ def eventos(request):
 
 def contato(request):
     return render(request, 'sucesuview/contato.html', {})
+
+def cadastro(request):
+    return render(request, 'sucesuview/cadastro.html', {})
+
+def associe_se(request):
+    return render(request, 'sucesuview/associe-se.html', {})
