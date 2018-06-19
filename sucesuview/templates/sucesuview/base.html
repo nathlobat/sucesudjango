@@ -22,27 +22,27 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html"><img src="{% static 'img/logo.png' %}" alt="logo"></a>
+                    <a class="navbar-brand" href="{% url 'index' %}"><img src="{% static 'img/logo.png' %}" alt="logo"></a>
                 </div>
                 <div class="navbar-collapse collapse ">
                     <ul class="nav navbar-nav">
-                        <li>
+                        <!-- <li>
                             <a href="quem_somos.html">A Sucesu</a>
+                        </li> -->
+                        <li>
+                            <a href="{% url 'associados' %}">Associados</a>
                         </li>
                         <li>
-                            <a href="associados.html">Associados</a>
+                            <a href="{% url 'parceiros' %}">Parceiros</a>
                         </li>
                         <li>
-                            <a href="parceiros.html">Parceiros</a>
-                        </li>
-                        <li>
-                            <a href="eventos.html">Eventos</a>
+                            <a href="{% url 'eventos' %}">Eventos</a>
                         </li>
                         <li>
                             <a href="https://www.flickr.com/photos/sucesupara/albums" target="_blank">Fotos</a>
                         </li>
                         <li>
-                            <a href="contact.html">Contato</a>
+                            <a href="{% url 'contato' %}">Contato</a>
                         </li>
                     </ul>
                 </div>
@@ -59,7 +59,7 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a class="navbar-brand" href="index.html"><img src="{% static 'img/logo.png' %}" alt="logo"></a>
+                            <a class="navbar-brand" href="{% url 'index' %}"><img src="{% static 'img/logo.png' %}" alt="logo"></a>
                         </div>
                         <div id="navbar" class="navbar-collapse collapse">
                             <ul class="nav navbar-nav">
@@ -67,36 +67,36 @@
                                     <a href="#" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">A Sucesu <span class="caret"></span></a>
                                     <ul class="dropdown-menu">
                                         <li>
-                                            <a href="quem_somos.html">Quem Somos</a>
+                                            <a href="{% url 'quem_somos' %}">Quem Somos</a>
                                         </li>
                                         <li>
-                                            <a href="diretoria_atual.html">Diretoria Atual</a>
+                                            <a href="{% url 'diretoria_atual' %}">Diretoria Atual</a>
                                         </li>
                                         <li>
-                                            <a href="sucesu_nacional.html">SUCESU Nacional</a>
+                                            <a href="{% url 'sucesu_nacional' %}">SUCESU Nacional</a>
                                         </li>
                                          <li>
-                                            <a href="gestoes_anteriotes.html">Gestões Anteriores</a>
+                                            <a href="{% url 'gestoes_anteriotes' %}">Gestões Anteriores</a>
                                         </li>
                                          <li>
-                                             <a href="estatuto_regimento.html">Estatuto e Regimento</a>
+                                             <a href="{% url 'estatuto_regimento' %}">Estatuto e Regimento</a>
                                         </li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="associados.html">Associados</a>
+                                    <a href="{% url 'associados' %}">Associados</a>
                                 </li>
                                 <li>
-                                    <a href="parceiros.html">Parceiros</a>
+                                    <a href="{% url 'parceiros' %}">Parceiros</a>
                                 </li>
                                 <li>
-                                    <a href="eventos.html">Eventos</a>
+                                    <a href="{% url 'eventos' %}">Eventos</a>
                                 </li>
                                 <li>
                                     <a href="https://www.flickr.com/photos/sucesupara/albums" target="_blank">Fotos</a>
                                 </li>
                                 <li>
-                                    <a href="contact.html">Contato</a>
+                                    <a href="{% url 'contato' %}">Contato</a>
                                 </li>
                             </ul>
 

@@ -17,3 +17,15 @@ def gestoes_anteriotes(request):
 
 def estatuto_regimento(request):
     return render(request, 'sucesuview/estatuto_regimento.html', {})
+
+def associados(request):
+    return render(request, 'sucesuview/associados.html', {})
+
+def parceiros(request):
+    return render(request, 'sucesuview/parceiros.html', {})
+
+def eventos(request):
+    return render(request, 'sucesuview/eventos.html', {})
+
+def contato(request):
+    return render(request, 'sucesuview/contato.html', {})
