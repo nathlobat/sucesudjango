@@ -35,3 +35,15 @@ def cadastro(request):
 
 def associe_se(request):
     return render(request, 'sucesuview/associe-se.html', {})
+
+def agenda(request):
+    return render(request, 'sucesuview/agenda.html', {})
+
+def contato(request):
+    return render(request, 'sucesuview/contato.html', {})
+
+def detalhe_evento(request):
+    return render(request, 'sucesuview/detalhe_evento2.html', {})
+
+def inscreva_se_evento(request):
+    return render(request, 'sucesuview/inscreva-se_evento.html', {})
