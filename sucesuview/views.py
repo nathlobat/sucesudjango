@@ -42,7 +42,7 @@ def agenda(request):
 def contato(request):
     return render(request, 'sucesuview/contato.html', {})
 
-def detalhe_evento(request):
+def evento(request):
     return render(request, 'sucesuview/detalhe_evento2.html', {})
 
 def inscreva_se_evento(request):
