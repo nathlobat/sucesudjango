@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from .models import Evento
+
 
 def index(request):
     return render(request, 'sucesuview/index.html', {})
@@ -25,7 +27,8 @@ def parceiros(request):
     return render(request, 'sucesuview/parceiros.html', {})
 
 def eventos(request):
-    return render(request, 'sucesuview/eventos.html', {})
+    lista_eventos = Evento.objects.all().order_by('data')
+    return render(request, 'sucesuview/eventos.html', {'eventos': lista_eventos})
 
 def contato(request):
     return render(request, 'sucesuview/contato.html', {})

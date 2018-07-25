@@ -14,7 +14,21 @@
   <section id="content">
           <div class="container content">
           <!-- Service Blcoks -->
-        <div class="row service-v1 margin-bottom-40">
+          {% for evento in eventos %}
+          <div class="row service-v1 margin-bottom-40">
+            <div class="col-md-4 md-margin-bottom-40">
+                <img class="img-responsive" src="{{ evento.imagem.url }}" alt="">
+            </div>
+            <div class="col-md-6">
+              <h3><a href="{% url 'evento' %}">{{ evento.titulo }}</a></h3>
+              <p> {{ evento.sobre}} </p>
+             <i class ="fa fa-map-marker"> {{ evento.local }} </i>
+			 <br>
+			 <i class="fa fa-calendar"> {{ evento.data }}, {{ evento.hora }} </i>
+            </div>
+          </div>
+          {% endfor %}
+        <!-- <div class="row service-v1 margin-bottom-40">
             <div class="col-md-4 md-margin-bottom-40">
                 <img class="img-responsive" src="{% static 'img/32178384_192487588245098_2486452607418105856_n.jpg' %}" alt="">
             </div>
@@ -55,7 +69,7 @@
 			 <br>
 			 <i class="fa fa-calendar"> 05 de Abril de 2018, 08:00 </i>
             </div>
-          </div>
+          </div> -->
 
 
           <!-- End Service Blcoks -->
