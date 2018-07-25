@@ -43,7 +43,7 @@ def contato(request):
     return render(request, 'sucesuview/contato.html', {})
 
 def evento(request):
-    return render(request, 'sucesuview/detalhe_evento2.html', {})
+    return render(request, 'sucesuview/detalhe_evento.html', {})
 
 def inscreva_se_evento(request):
     return render(request, 'sucesuview/inscreva-se_evento.html', {})
