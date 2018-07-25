@@ -3,6 +3,6 @@
 *.pyc
 *~
 /__pycache__/
+media/
 
-myvenv
 db.sqlite3
