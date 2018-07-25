@@ -2,7 +2,7 @@
 
 *.pyc
 *~
-/__pycache__/
-media/
+/__pycache__/*
+media/*
 
 db.sqlite3
