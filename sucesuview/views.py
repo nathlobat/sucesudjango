@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Evento
+from .models import Evento, DiretoriaAtual
 
 
 def index(request):
@@ -9,7 +9,9 @@ def quem_somos(request):
     return render(request, 'sucesuview/quem_somos.html', {})
 
 def diretoria_atual(request):
-    return render(request, 'sucesuview/diretoria_atual.html', {})
+    diretores = DiretoriaAtual.objects.all()
+
+    return render(request, 'sucesuview/diretoria_atual.html', {'diretores': diretores})
 
 def sucesu_nacional(request):
     return render(request, 'sucesuview/sucesu_nacional.html', {})

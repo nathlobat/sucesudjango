@@ -15,3 +15,4 @@ class Evento(models.Model):
 class DiretoriaAtual(models.Model):
     nome = models.CharField(max_length=200)
     cargo = models.CharField(max_length=200)
+    imagem = models.ImageField(upload_to='images/diretoria/%Y-%m/%d')
