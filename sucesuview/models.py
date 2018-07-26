@@ -9,4 +9,9 @@ class Evento(models.Model):
     local = models.CharField(max_length=200)
     data = models.DateField(auto_now=False, auto_now_add=False)
     hora = models.TimeField(auto_now=False, auto_now_add=False, default=None)
-    imagem = models.ImageField(upload_to='images/%Y/%m/%d')
+    imagem = models.ImageField(upload_to='images/eventos/%Y-%m/%d')
+
+
+class DiretoriaAtual(models.Model):
+    nome = models.CharField(max_length=200)
+    cargo = models.CharField(max_length=200)
