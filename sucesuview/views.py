@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from .models import Evento, DiretoriaAtual
 
 
@@ -32,6 +32,10 @@ def eventos(request):
     lista_eventos = Evento.objects.all().order_by('data')
     return render(request, 'sucesuview/eventos.html', {'eventos': lista_eventos})
 
+def detalhe_evento(request, pk):
+    evento = get_object_or_404(Evento, pk=pk)
+    return render(request, 'sucesuview/detalhe_evento.html', {'evento': evento})
+
 def contato(request):
     return render(request, 'sucesuview/contato.html', {})
 
@@ -46,9 +50,6 @@ def agenda(request):
 
 def contato(request):
     return render(request, 'sucesuview/contato.html', {})
-
-def evento(request):
-    return render(request, 'sucesuview/detalhe_evento.html', {})
 
 def inscreva_se_evento(request):
     return render(request, 'sucesuview/inscreva-se_evento.html', {})

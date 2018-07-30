@@ -20,7 +20,7 @@
                 <img class="img-responsive" src="{{ evento.imagem.url }}" alt="">
             </div>
             <div class="col-md-6">
-              <h3><a href="{% url 'evento' %}">{{ evento.titulo }}</a></h3>
+              <h3><a href="{% url 'evento' pk=evento.pk %}">{{ evento.titulo }}</a></h3>
               <p> {{ evento.sobre}} </p>
              <i class ="fa fa-map-marker"> {{ evento.local }} </i>
 			 <br>
@@ -33,7 +33,7 @@
                 <img class="img-responsive" src="{% static 'img/32178384_192487588245098_2486452607418105856_n.jpg' %}" alt="">
             </div>
             <div class="col-md-6">
-              <h3><a href="{% url 'evento' %}">Desafio Hackathon Ver-o-Peso</a></h3>
+              <h3><a href="">Desafio Hackathon Ver-o-Peso</a></h3>
               <p>A <strong>Visa</strong>, patrocinadora master do <strong>Amazon Lauch 2</strong>, está trazendo o projeto <i>Cashless Cities</i> para Belém através do <i>Desafio Hackton Ver-o-Peso</i>
 			   e a <strong>Kyvo Design e Inovação</strong> vai oferecer consultoria para as equipes e coordenar esse desafio!
 			   <i>Inscreva-se no Amazon Launch 2</i> e garanta sua pré-inscrição no hackathon para sair na frente! <strong>Amazon Lauch 2</strong></p>
@@ -48,7 +48,7 @@
                 <img class="img-responsive" src="{% static 'img/conferencia.jpg' %}" alt="">
             </div>
             <div class="col-md-6">
-              <h3><a href="{% url 'evento' %}">Conferência Gestão do Conhecimento e Inovação: Um modelo para incrementar a capacidade inovadora na indústria</a></h3>
+              <h3><a href="">Conferência Gestão do Conhecimento e Inovação: Um modelo para incrementar a capacidade inovadora na indústria</a></h3>
               <p>O <strong>PCT Guamá</strong> receberá o professor Charles Benigno, coordenador do <i>Núcleo de Inovação e Tecnologia – NIT da UFRA</i>, para uma
 			  conferência sobre gestão do conhecimento e inovação.</p>
              <i class ="fa fa-map-marker"> Auditório do Espaço Empreendedor - PCT Guamá (Avenida Perimetral da Ciência km 01, Guamá) - Belém,PA </i>
@@ -62,7 +62,7 @@
               <img class="img-responsive" src="{% static 'img/evento3.jpg' %}" alt="">
             </div>
             <div class="col-md-6">
-              <h3><a href="{% url 'evento' %}" class="eventos">Cafe Tech Abril 2018</a></h3>
+              <h3><a href="" class="eventos">Cafe Tech Abril 2018</a></h3>
               <p>O <strong>Café Tech</strong> é o ponto de encontro ideal para trocas de experiências e divulgação de produtos e serviços, realçando o caráter de integração dos associados da SUCESU PARÁ, profissionais, estudantes e empresários do Estado.
                 Patrocinado por empresas de TIC e promovido pela <strong>SUCESU PA</strong>, vem se consolidando no mercado de Belém como uma excelente alternativa  para apresentação de novos produtos, “cases” de sucesso e serviços da área de informática e telecomunicações.</p>
              <i class ="fa fa-map-marker">  Belém Hall Eventos - Belém,PA </i>
