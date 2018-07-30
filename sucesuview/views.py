@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404
-from .models import Evento, DiretoriaAtual
+from .models import Evento, DiretoriaAtual, Associado, Parceiro
 
 
 def index(request):
@@ -23,10 +23,13 @@ def estatuto_regimento(request):
     return render(request, 'sucesuview/estatuto_regimento.html', {})
 
 def associados(request):
-    return render(request, 'sucesuview/associados.html', {})
+    associados = Associado.objects.all()
+    return render(request, 'sucesuview/associados.html', {'associados': associados})
 
 def parceiros(request):
-    return render(request, 'sucesuview/parceiros.html', {})
+    parceiro = Parceiro.objects.all()
+    return render(request, 'sucesuview/parceiros.html', {'parceiros': parceiro})
+
 
 def eventos(request):
     lista_eventos = Evento.objects.all().order_by('data')

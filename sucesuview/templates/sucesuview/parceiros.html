@@ -23,71 +23,18 @@
 
 						<div class="team-six">
 							<div class="row">
+								{% for parceiro in parceiros %}
 								<div class="col-md-2 col-xs-6">
 									<!-- Team Member -->
 									<div class="team-member">
 										<!-- Image -->
-										<img class="img-responsive" src="{% static 'img/team1.jpg' %}" alt="" >
+										<img class="img-responsive" src="{{ parceiro.imagem.url }}" alt="" >
 										<!-- Name -->
-										<h4 class="text-center">Johne Doe</h4>
+										<h4 class="text-center">{{ parceiro.nome }}</h4>
 
 									</div>
 								</div>
-								<div class="col-md-2 col-xs-6">
-									<!-- Team Member -->
-									<div class="team-member">
-										<!-- Image -->
-										<img class="img-responsive" src="{% static 'img/team2.jpg' %}" alt="">
-										<!-- Name -->
-										<h4 class="text-center">Jennifer</h4>
-
-									</div>
-								</div>
-								<div class="col-md-2 col-xs-6">
-									<!-- Team Member -->
-									<div class="team-member">
-										<!-- Image -->
-										<img class="img-responsive" src="{% static 'img/team3.jpg' %}" alt="">
-										<!-- Name -->
-										<h4 class="text-center">Christean</h4>
-
-									</div>
-								</div>
-								<div class="col-md-2 col-xs-6">
-									<!-- Team Member -->
-									<div class="team-member">
-										<!-- Image -->
-										<img class="img-responsive" src="{% static 'img/team4.jpg' %}" alt="">
-										<!-- Name -->
-										<h4 class="text-center">Kerinele rase</h4>
-
-									</div>
-								</div>
-
-                <div class="col-md-2 col-xs-6">
-									<!-- Team Member -->
-									<div class="team-member">
-										<!-- Image -->
-										<img class="img-responsive" src="{% static 'img/team1.jpg' %}" alt="" >
-										<!-- Name -->
-										<h4 class="text-center">Johne Doe</h4>
-
-									</div>
-								</div>
-
-                <div class="col-md-2 col-xs-6">
-									<!-- Team Member -->
-									<div class="team-member">
-										<!-- Image -->
-										<img class="img-responsive" src="{% static 'img/team2.jpg' %}" alt="">
-										<!-- Name -->
-										<h4 class="text-center">Jennifer</h4>
-
-									</div>
-								</div>
-							</div>
-						</div>
-
+								{% endfor %}
 						<!-- Our team ends -->
 
 

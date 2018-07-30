@@ -18,9 +18,9 @@
                 <div class="col-md-6 col-lg-6">
                     <p class="text-justify">
                        {{ evento.sobre }}
-                    <p>Data: {{ evento.data }}</p>
-                    <p>Horário: {{ evento.hora }}</p>
-                    <p>Local: {{ evento.local }}</p>
+                    <p> <i class="fa fa-calendar"> {{ evento.data }}</i></p>
+                    <p> <i class="icon-clock"> {{ evento.hora }}</i></p>
+                    <p> <i class ="fa fa-map-marker"> {{ evento.local }}</i></p>
                 </div>
                 <div class="col-md-5 col-lg-5">
                     <img class="img-responsive" src="{{ evento.imagem.url}}" alt="">
@@ -31,7 +31,15 @@
         <div class="visible-xs visible-md">
             <div class="row">
                 <div class="col-xs-12 col-md-12">
-                    <img class="img-responsive" src="img/service1.jpg" alt="">
+                    <img class="img-responsive" src="{{ evento.imagem.url }}" alt="">
+                </div>
+                
+                <div class="col-md-6 col-lg-6">
+                        <p class="text-justify">
+                           {{ evento.sobre }}
+                        <p>Data: {{ evento.data }}</p>
+                        <p>Horário: {{ evento.hora }}</p>
+                        <p>Local: {{ evento.local }}</p>
                 </div>
             </div>
         </div>
