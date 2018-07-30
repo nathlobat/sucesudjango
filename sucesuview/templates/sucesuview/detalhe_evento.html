@@ -5,7 +5,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
-				<h2 class="pageTitle">Nome Evento</h2>
+				<h2 class="pageTitle">{{ evento.titulo }}</h2>
 			</div>
 		</div>
 	</div>
@@ -17,25 +17,13 @@
     	    <div class="row">
                 <div class="col-md-6 col-lg-6">
                     <p class="text-justify">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Dolores quae porro consequatur aliquam, incidunt eius magni provident,
-                        doloribus omnis minus temporibus perferendis nesciunt quam repellendus
-                        nulla nemo ipsum odit corrupti consequuntur possimus.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Dolores quae porro consequatur aliquam, incidunt eius magni provident,
-                        doloribus omnis minus temporibus perferendis nesciunt quam repellendus
-                        nulla nemo ipsum odit corrupti consequuntur possimus
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Dolores quae porro consequatur aliquam, incidunt eius magni provident,
-                        doloribus omnis minus temporibus perferendis nesciunt quam repellendus
-                        nulla nemo ipsum odit corrupti consequuntur possimus
-                    </p>
-                    <p>Data: dd/mm/aaaa</p>
-                    <p>Horário: </p>
-                    <p>Local: </p>
+                       {{ evento.sobre }}
+                    <p>Data: {{ evento.data }}</p>
+                    <p>Horário: {{ evento.hora }}</p>
+                    <p>Local: {{ evento.local }}</p>
                 </div>
                 <div class="col-md-5 col-lg-5">
-                    <img class="img-responsive" src="img/service1.jpg" alt="">
+                    <img class="img-responsive" src="{{ evento.imagem.url}}" alt="">
                 </div>
             </div>
         </div>
@@ -44,27 +32,6 @@
             <div class="row">
                 <div class="col-xs-12 col-md-12">
                     <img class="img-responsive" src="img/service1.jpg" alt="">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-md-12">
-                    <p class="text-justify">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Dolores quae porro consequatur aliquam, incidunt eius magni provident,
-                        doloribus omnis minus temporibus perferendis nesciunt quam repellendus
-                        nulla nemo ipsum odit corrupti consequuntur possimus.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Dolores quae porro consequatur aliquam, incidunt eius magni provident,
-                        doloribus omnis minus temporibus perferendis nesciunt quam repellendus
-                        nulla nemo ipsum odit corrupti consequuntur possimus
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Dolores quae porro consequatur aliquam, incidunt eius magni provident,
-                        doloribus omnis minus temporibus perferendis nesciunt quam repellendus
-                        nulla nemo ipsum odit corrupti consequuntur possimus
-                    </p>
-                    <p>Data: dd/mm/aaaa</p>
-                    <p>Horário: </p>
-                    <p>Local: </p>
                 </div>
             </div>
         </div>
