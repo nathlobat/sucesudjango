@@ -18,8 +18,10 @@ class DiretoriaAtual(models.Model):
     imagem = models.ImageField(upload_to='images/diretoria/%Y-%m/%d')
 
 class Assossiados(models.Model):
-    pass
+    nome = models.CharField(max_length=200)
+    imagem = models.ImageField(upload_to='images/associados/%Y-%m/%d')
 
 
 class Parceiros(models.Model):
-    pass
+    nome = models.CharField(max_length=200)
+    imagem = models.ImageField(upload_to='images/parceiros/%Y-%m/%d')
