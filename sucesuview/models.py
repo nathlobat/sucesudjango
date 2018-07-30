@@ -17,11 +17,11 @@ class DiretoriaAtual(models.Model):
     cargo = models.CharField(max_length=200)
     imagem = models.ImageField(upload_to='images/diretoria/%Y-%m/%d')
 
-class Assossiados(models.Model):
+class Assossiado(models.Model):
     nome = models.CharField(max_length=200)
     imagem = models.ImageField(upload_to='images/associados/%Y-%m/%d')
 
 
-class Parceiros(models.Model):
+class Parceiro(models.Model):
     nome = models.CharField(max_length=200)
     imagem = models.ImageField(upload_to='images/parceiros/%Y-%m/%d')
