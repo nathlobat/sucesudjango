@@ -18,7 +18,6 @@
 		<br>
 
 		<!-- Our team starts -->
-
 		<div class="team-six">
 			{% for diretor in diretores %}
 				{% if forloop.counter0|divisibleby:6 %}
@@ -30,7 +29,8 @@
 						<!-- Image -->
 						<img class="img-responsive" src="{{ diretor.imagem.url }}" alt="">
 						<!-- Name -->
-						<h4 class="text-center"> {{ diretor.nome }} </h4>
+						<h4 class=""> {{ diretor.nome }} </h4>
+						<span class="deg"> {{ diretor.cargo }} </span>
 					</div>
 				</div>
 				{% if forloop.counter|divisibleby:6 or forloop.last  %}
