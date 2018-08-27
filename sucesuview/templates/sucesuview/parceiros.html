@@ -1,7 +1,5 @@
-{% extends 'sucesuview/base.html' %}
-{% load staticfiles%}
-{% block content %}
-	<section id="inner-headline">
+{% extends 'sucesuview/base.html' %} {% load staticfiles%} {% block content %}
+<section id="inner-headline">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
@@ -9,37 +7,38 @@
 			</div>
 		</div>
 	</div>
-	</section>
-	<section id="content">
+</section>
+<section id="content">
 	<div class="container">
-						<!-- Our Team starts -->
-						<!-- Heading -->
-						<!-- <div class="block-heading-six">
+		<!-- Our Team starts -->
+		<!-- Heading -->
+		<!-- <div class="block-heading-six">
 							<h4 class="bg-color">Our Team</h4>
 						</div> -->
-						<br>
+		<br>
 
-						<!-- Our team starts -->
+		<!-- Our team starts -->
 
-						<div class="team-six">
-							<div class="row">
-								{% for parceiro in parceiros %}
-								<div class="col-md-2 col-xs-6">
-									<!-- Team Member -->
-									<div class="team-member">
-										<!-- Image -->
-										<img class="img-responsive" src="{{ parceiro.imagem.url }}" alt="" >
-										<!-- Name -->
-										<h4 class="text-center">{{ parceiro.nome }}</h4>
-
-									</div>
-								</div>
-								{% endfor %}
-						<!-- Our team ends -->
-
-
+		<div class="team-six">
+			{% for parceiro in parceiros %}
+				{% if forloop.counter0|divisibleby:6 %}
+					<div class="row">
+				{% endif %}
+				<div class="col-md-2 col-xs-6">
+					<!-- Team Member -->
+					<div class="team-member">
+						<!-- Image -->
+						<img class="img-responsive" src="{{ parceiro.imagem.url }}" alt="">
+						<!-- Name -->
+						<h4 class="text-center"> {{ parceiro.nome }} </h4>
 					</div>
-
 				</div>
-	</section>
+				{% if forloop.counter|divisibleby:6 or forloop.last  %}
+					</div>
+				{% endif %}
+			{% endfor %}
+				<!-- Our team ends -->
+			</div>
+		</div>
+</section>
 {% endblock %}
